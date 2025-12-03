@@ -227,6 +227,9 @@ html,body{
   overflow:auto;
   min-height:100vh;
   scrollbar-gutter:stable both-edges;
+  overscroll-behavior:contain;
+  touch-action:pan-y;
+  -webkit-overflow-scrolling:touch;
 }
 .modal-overlay.open{display:block}
 .modal{
