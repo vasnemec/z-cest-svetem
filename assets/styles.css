@@ -243,6 +243,9 @@ html,body{
   box-shadow:0 10px 40px rgba(10,18,14,.35);
   max-height:92vh;
   overflow:auto;
+  overscroll-behavior:contain;
+  touch-action:pan-y;
+  -webkit-overflow-scrolling:touch;
   display:flex;
   flex-direction:column;
   margin:10px auto 24px;
@@ -286,7 +289,16 @@ html,body{
   .reader{margin:12px auto 18px;padding:12px}
   .poem-title{font-size:20px}
   .poem-body{max-width:100%;padding:2px 4px;min-height:120px}
-  .modal{padding:18px 16px 14px;width:min(96vw,720px);margin:12px auto 20px;max-height:92vh;overflow:auto}
+  .modal{
+    padding:18px 16px 14px;
+    width:min(96vw,720px);
+    margin:12px auto 20px;
+    max-height:92vh;
+    overflow:auto;
+    overscroll-behavior:contain;
+    touch-action:pan-y;
+    -webkit-overflow-scrolling:touch;
+  }
   .modal-header{flex-wrap:wrap;gap:6px}
   .poem-list{grid-template-columns:1fr;gap:8px 10px}
 }
